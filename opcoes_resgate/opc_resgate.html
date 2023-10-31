@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ca746a463a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #SubTot, #Points{
+            display: inline-block;
+            width: 49%;
+            margin: 20 0;
+            padding: 0;
+        }
+        #SaldoTot{
+            margin: 0;
+            padding: 0;
+        }
+        #Points{
+            font-weight: 900;
+            text-align: right;
+        }
+        #SubTot{
+            margin: 0;
+        }
+    </style>
+    <title>Opções</title>
+</head>
+<body>
+    <header>
+        <nav id="RNavBar">
+            <div id="DivLeft">
+                <a href="/home/index.html"><img src="img/logo.png" alt="logo do site" id="ImgLogo"></a> <!--    Link para a página inicial  -->
+                <ul class="dropdown-menu text-small">
+            </div> 
+             <div id="DivRight">
+                <i class="fa-solid fa-coins" style="color: #296117;" id="coins"></i>
+                <p class="LogOff">300,00</p>
+                <img src="img/Ellipse 4.png" alt="foto de perfil do usuário" id="ImgUser">
+                <a class="LogOff" href="/home/index.html"><ul>Sair</ul></a>
+            
+            </div>
+        </nav>
+    </header>
+    <article id="Resgate">
+        <h2 id="TitResgate">OPÇÕES DE RESGATE</h2>
+        <table id="TabResgate">
+            <thead>
+                <th id="HeadTab">OPÇÃO</th>
+                <th class="HeadTab2">SELEÇÃO</th>
+            </thead>
+            <tr>
+                <td class="TabItem OptR">Shows e ingressos</td>
+                <td class="TabValue OptR"></div><input type="checkbox" name="check_1" id="check_1" value="150" checked class="check"></td>
+            </tr>
+            <tr>
+                <td class="TabItem OptR">Descontos</td>
+                <td class="TabValue OptR"><input type="checkbox" name="check_2" id="check_2" value="150" checked class="check"></td>
+            </tr>
+            <tr>
+                <td class="TabItem OptR">Bilhetes de ônibus</td>
+                <td class="TabValue OptR"><input type="checkbox" name="check_3" id="check_3" value="150" checked class="check"></td>
+            </tr>
+        </table>
+    </article>
+    <article id="TotResgate">
+        <h2 id="TitTotal">PEDIDO</h2>
+        <P id="PTotal_Itens"></P>
+        <div id="SaldoTot">
+            <h3 id="SubTot">SALDO:</h3>
+            <h3 id="Points">300</h3>
+        </div>
+        <p id="PTotal"></p>
+        <div id="DivCenter">
+            <button id="btn_Resgate" onclick="window.location.href = '/resgate/resgatar.html'">Finalizar</button>
+        </div>
+    </article>
+    <div id="rodape">
+        <footer>
+            <div>
+                <span id="copy">© 2023 Ecosrev</span>
+                <div id="icons">
+                    <a href=""><i class="fa-brands fa-instagram foo" style="color: rgba(87, 87, 87, 0.7);"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook-f foo" style="color: rgba(87, 87, 87, 0.7);"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter foo" style="color: rgba(87, 87, 87, 0.7);"></i></a>
+                    <a href=""><i class="fa-brands fa-github foo" style="color: rgba(87, 87, 87, 0.7);"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script>
+    isCheck = [] //Iniciando a variável de valores checkados
+    var c = document.getElementsByClassName("check") // Iniciando a variável com endereçamento das checkboxes
+    for (var i = 0; i < c.length; i++) { //Iniciando loop que chama a função
+        c[i].addEventListener('click', function(){
+            for (var co = 0; co < c.length; co++){ // Loop de alimentação do array de checkboxes checados
+                isCheck.push(c[co].checked)
+            }
+            if (isCheck.includes(true)) // Se houver um valor verdadeiro ele mostra o total do resgate, senão, oculta novamente
+                document.getElementById("TotResgate").style.display = "block"
+            else{
+                document.getElementById("TotResgate").style.display = "none"
+            }
+            isCheck = [] // limpa o array
+        });
+        
+    }
+</script>
+</html>

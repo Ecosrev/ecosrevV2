@@ -1,0 +1,68 @@
+:root{
+    --cor_princial_verde: #296117;
+    --cor_secundaria_verde: #D3E381;
+    --cor_terciaria_cinza: #7E7C7C;
+    --cor_background_cinza: #F3F3F3;
+    --fontfamily_padrao:'Josefin Sans';
+    }
+.col{
+    font-family: var(--fontfamily_padrao);
+}
+#teste{
+    font-family: var(--fontfamily_padrao);
+    background-color: var(--cor_background_cinza);
+    border: none;
+    text-align: center;
+    justify-content: center;
+}
+#resultado_frase{
+    font-family: var(--fontfamily_padrao);
+    color: var(--cor_princial_verde);
+    font-weight: 700;
+    font-size: 35px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    }
+
+#pesquisa_btn{
+    background-color: var(--cor_secundaria_verde);
+    color: var(--cor_princial_verde);
+    font-family: var(--fontfamily_padrao);
+    font-weight: 700;
+    font-size: 15px;
+    width: 100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 20px;
+}
+#pesquisar_btn{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 2rem;
+    margin-left: 20px;
+    width: 98%;
+    border-top: 1px solid rgba(87, 87, 87, 0.25);
+    padding-top: 20px;
+    color: rgba(87, 87, 87, 0.7);
+    margin-bottom: 15px;
+}
+footer div{
+    display: inline-block;
+}
+#icons{
+    right: 0;
+    position: fixed;
+    margin-right: 1.5%;
+}
+.foo{
+    margin-left: 10px;
+}

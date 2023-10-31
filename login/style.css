@@ -1,0 +1,132 @@
+/* Fonte padrão do site */
+*{
+    font-family: Josefin Sans;
+}
+
+/* Cor de fundo do site */
+body{
+    background: #FFFFFF;
+ }
+
+ /* CSS div do login */
+#login{
+    width: 50%;
+    margin-top: 0px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Formatação do texto do login */
+p{
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Disposição do logo */
+#footer{
+    display: flex;
+    
+}
+
+/* Formatação do botão "Entrar" */
+#btnEntrar{
+    display: flex;
+    justify-content: center;
+}
+
+/* Definindo altura do input */
+input{
+    height: 50px;
+}
+
+/* Disposição da div do Login */
+#divLogin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Formatando o texto das âncoras */
+a{
+    color: black;
+}
+
+/* Definindo a disposição e estilização das elipses de fundo */
+.ellipse{
+    position: absolute;
+    width: 150px;
+    height: 129px;
+    left: 95px;
+    top: 125px;
+
+    background: rgba(211, 227, 129, 0.2);
+    /* Setting Border Radius */
+    border-radius: 50%;
+}
+
+.ellipse2{
+    position: absolute;
+    width: 117px;
+    height: 110px;
+    left: 1175px;
+    top: 83px;
+    border-radius: 50%;
+    background: rgba(211, 227, 129, 0.2);
+}
+
+.ellipse3{
+    position: absolute;
+    width: 98px;
+    height: 89px;
+    left: 906px;
+    top: 260px;
+    border-radius: 50%;
+    background: rgba(211, 227, 129, 0.2);
+}
+
+.ellipse4{
+    position: absolute;
+    width: 160px;
+    height: 150px;
+    left: 1082px;
+    top: 458px;
+    border-radius: 50%;
+    background: rgba(211, 227, 129, 0.2);
+}
+
+.ellipse5{
+    position: absolute;
+    width: 121px;
+    height: 108px;
+    left: 74px;
+    top: 381px;
+    border-radius: 50%;
+    background: rgba(211, 227, 129, 0.2);
+}
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 2rem;
+        margin-left: 20px;
+        width: 98%;
+        border-top: 1px solid rgba(87, 87, 87, 0.25);
+        padding-top: 20px;
+        color: rgba(87, 87, 87, 0.7);
+        margin-bottom: 15px;
+    }
+    footer div{
+        display: inline-block;
+    }
+    #icons{
+        right: 0;
+        position: fixed;
+        margin-right: 1.5%;
+    }
+    .foo{
+        margin-left: 10px;
+    }

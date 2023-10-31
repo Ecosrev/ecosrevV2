@@ -1,0 +1,111 @@
+:root{
+    --cor_princial_verde: #296117;
+    --cor_secundaria_verde: #D3E381;
+    --cor_terciaria_cinza: #7E7C7C;
+    --cor_background_cinza: #F3F3F3;
+    --fontfamily_padrao:'Josefin Sans';
+    }
+.col{
+    font-family: var(--fontfamily_padrao);
+}
+#agradecimento_conteudo{
+    text-align: center;
+}
+
+#agradecimento_texto{
+    font-family: var(--fontfamily_padrao);
+    color: var(--cor_princial_verde);
+    font-weight: 700;
+    font-size: 45px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    }
+
+#agradecimento_subtexto{
+    font-family: var(--fontfamily_padrao);
+    color: #2c5f1ba3;
+    font-weight: 700;
+    font-size: 35px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    }
+#agradecimento_btn{
+    background-color: var(--cor_secundaria_verde);
+    color: var(--cor_princial_verde);
+    font-family: var(--fontfamily_padrao);
+    font-weight: 700;
+    font-size: 15px;
+    width: 100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 20px;
+}
+#agradecimento_img{
+    margin: 25px 0px 55px 0px;
+}
+
+
+#RNavBar{
+    border-bottom: 1px solid rgba(87, 87, 87, 0.25);
+    padding: 10px;
+    margin-bottom: 25px;
+}
+/* FORMATANDO A DIV ESQUERDA */
+    #DivLeft{
+    position: absolute;
+}    
+    /* FORMATANDO A IMAGEM DO LOGO */
+    #ImgLogo{
+        width: 150px;
+        margin-top: 5px;
+}
+/* FORMATANDO A DIV DIREITA */
+    #DivRight{
+        display: flex; 
+        justify-content: flex-end;
+        position: relative;
+        align-items: center;
+        text-align: center;
+    }
+    /* FORMATANDO A FOTO DO USUÁRIO */
+    #ImgUser{
+        width: 60px;
+        margin: 2px 15px;
+    }
+    /* FORMATANDO O LOG OFF */
+    .LogOff{
+        display: inline-block;
+        margin-right: 30px;
+        font-size: 20px;
+        font-weight: 630;
+        color: #296117;
+        text-decoration: none;
+
+    }
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 2rem;
+        margin-left: 20px;
+        width: 98%;
+        border-top: 1px solid rgba(87, 87, 87, 0.25);
+        padding-top: 20px;
+        color: rgba(87, 87, 87, 0.7);
+        margin-bottom: 15px;
+    }
+    footer div{
+        display: inline-block;
+    }
+    #icons{
+        right: 0;
+        position: fixed;
+        margin-right: 1.5%;
+    }
+    .foo{
+        margin-left: 10px;
+    }

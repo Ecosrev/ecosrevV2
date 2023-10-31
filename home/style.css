@@ -1,0 +1,216 @@
+/* Fonte padrão do site */
+*{
+    font-family: Josefin Sans;
+
+}
+
+/* Cor de fundo do site */
+body{
+   background: #FFFFFF;
+}
+
+/* Tamanho da imagem do logo */
+img{
+    width: 150px;
+    margin-top: 5px;
+}
+
+/* Retirando a decoração da âncora */
+a:link{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    color: black;
+}
+
+/* Alterando a cor do item "Login" do Menu*/
+#login{
+    color: #296117;
+}
+
+/* Tornando a div do Logo responsiva */
+#divLogo{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    padding: 10px;
+}
+
+/* Tornando a div do Menu responsiva e ajustando as posições de cada item */
+#divMenu{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 15px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+#divContent{
+    display: flex;
+    margin: auto;
+}
+
+#inicio{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 2%;
+}
+/* Formatação do primeiro parágrafo */
+#p1{
+    font-family: Josefin Sans;
+    font-size: clamp(1em, 1em + 1vw, 1.5em);
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding-top: 90px;
+    
+    font-family: Josefin Sans;
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: center;
+    
+    font-family: Josefin Sans;
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(41, 97, 23, 1);
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+
+/* Formatação do segundo parágrafo */
+#p2{
+    display: flex;
+    margin: auto;
+    width: 556px;
+    height: 48px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 200%;
+    line-height: 40px;
+    justify-content: center;
+    color: #7E7C7C;
+}
+
+/* Ajustando a posição do input da barra de pesquisa */
+#barra{
+    display: flex;
+    margin: auto;
+    margin-bottom: 150px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+}
+
+.input-groupflex-nowrap{
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    margin: auto;
+    width: 50%;
+}
+.input-groupflex-nowrap span, .input-groupflex-nowrap input, .input-groupflex-nowrap button{
+    height: 150%;
+
+}
+
+/* Ajustando a posição do input da barra de pesquisa */
+.input-group-text{
+    padding: none;
+}
+
+
+/* Customizando as respectivas cores da barra de pesquisa e seus itens */
+#pesquisa{
+    background-color: #F3F3F3;
+    border-color: #F3F3F3;
+    border-radius: 0px 10px 10px 0px;
+    height: 35px;
+    margin-right: 20px;
+}
+
+span{
+    border-color: #F3F3F3;
+    background-color: #F3F3F3;
+    padding: none;
+    height: 35px;
+
+}
+#addon-wrapping{
+    padding: none;
+    height: 35px;
+}
+
+svg{
+    color: #7E7C7C;
+    background-color: #F3F3F3;
+    box-shadow: 0px 2px #00000038;
+    height: 35px;
+    padding: none;
+
+}
+
+/* Formatação do botão "Buscar" */
+#btnBuscar{
+    border-radius: 9px;
+    border: 0px;
+    background-color: #D3E381;
+    box-shadow: 0px 2px #00000038;
+    color: #296117;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 15px;
+    width: 100px;
+    height: 35px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    border: none;
+}
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 2rem;
+        margin-left: 20px;
+        width: 98%;
+        border-top: 1px solid rgba(87, 87, 87, 0.25);
+        padding-top: 20px;
+        color: rgba(87, 87, 87, 0.7);
+        margin-bottom: 15px;
+    }
+    footer div{
+        display: inline-block;
+    }
+    #icons{
+        right: 0;
+        position: fixed;
+        margin-right: 1.5%;
+    }
+    .foo{
+        margin-left: 10px;
+    }

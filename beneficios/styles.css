@@ -1,0 +1,208 @@
+@charset "utf-8";
+/* DEFININDO FONTE PADRÃO PARA O SITE */
+*{
+    font-family: 'Josefin Sans', sans-serif;
+}
+/* TIRANDO MARGEM E DE CIMA DO DOCUMENTO */
+body {    
+    margin: 0 !important;
+    padding: 0 !important;
+}
+/* FORMATÇAÕ DO MENU */
+    /* FORMATANDO O NAV */
+        #RNavBar{
+            border-bottom: 1px solid rgba(87, 87, 87, 0.25);
+            padding: 10px;
+        }
+        /* FORMATANDO A DIV ESQUERDA */
+        #DivLeft{
+            position: absolute;
+        }    
+            /* FORMATANDO A IMAGEM DO LOGO */
+            #ImgLogo{
+                width: 150px;
+                margin-top: 5px;
+        }
+        /* FORMATANDO A DIV DIREITA */
+            #DivRight{
+                display: flex; 
+                justify-content: flex-end;
+                position: relative;
+            }
+            /* FORMATANDO A FOTO DO USUÁRIO */
+            #ImgUser{
+                width: 60px;
+                margin: 2px 15px;
+            }
+            /* FORMATANDO O LOG OFF */
+            .LogOff{
+                display: inline-block;
+                margin-right: 30px;
+                font-size: 20px;
+                font-weight: 630;
+                color: #296117;
+            }
+            /* FORMATANDO O ÍCONE DE PONTOS */
+            #coins{
+                width: 15px;
+                padding: 20px 7px 0 0;
+                color: #296117;
+            }
+
+/* FORMATANDO O PRIMEIRO ARTICLE > TABELA DE ESCOLHA DE RESGATE */
+#Resgate{
+    position: absolute;
+    width: 45%;
+}
+    /* FORMATANDO TÍTULO */
+    #TitResgate{
+        margin: 25px 20px;
+        color: #296117;
+        font-size: 60px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.40);
+        width: 100%;
+    }
+    /* FORMATANDO A TABELA */
+    #TabResgate{
+        margin-left: 20px;
+        font-size: 20px;
+        width: 100%;
+    }
+    /* FORMATANDO O CABEÇALHO DA TABELA */
+    #HeadTab, .HeadTab2{
+        text-align: left;
+        padding: 0px 30px 3em 0px;
+    }
+    /* CENTRALIZANDO OS CABEÇALHOS DE VALORES */
+    .HeadTab2{
+        text-align: center;
+        padding: 0 0 3em 0;
+    }
+    /* FORMATANDO ESPAÇAMENTO ENTRE LINHAS */
+    td{
+        padding-top: 10px;
+    }
+    /* FORMATANDO AS LINHAS DE ITEM DA TABELA */
+    .TabItem{
+        padding: 0px 30px 0px 0px;
+    }
+    /* FORMATANDO COR DAS LINHAS DA TABELA */
+    .TabItem, .TabValue{
+        color: #7E7C7C;
+    }
+    /* FORMATANDO AS LINHA DE VALORES DA TABELA */
+    .TabValue{
+        text-align: center;
+    }
+/* FORMATANDO O SEGUNDO ARTICLE */
+#TotResgate{
+    width: 20%;
+    background-color: rgba(126, 124, 124, 0.15);
+    padding: 10px;
+    border-radius: 7px;
+    border: 0px;
+    position: relative;
+    float: right;
+    margin: 50px 50px 0 0;
+    display: none;
+    
+}
+    /* FORMATANDO o TÍTULO */
+    #TitTotal{
+        color: #296117;
+        text-align: center;
+    }
+    /* FORMATANDO O TOTAL */
+    #SubTot{
+        font-weight: 700;
+        margin-left: 20px;
+    }
+    /* FORMATANDO O BOTÃO */
+    #btn_Resgate{
+        padding: 10px;
+        border-radius: 9px;
+        border: 0px;
+        background-color: #D3E381;
+        box-shadow: 0px 2px #00000038;
+    }
+    /* CENTRALIZANDO BOTÃO */
+    #DivCenter{
+        text-align: center;
+    }
+
+
+/* FORMATANDO AS LINHAS DA TABELA DA SEGUNDA PÁGINA 'OPÇÕES DE RESGATE' */
+.OptR{
+    padding-bottom: 3em;
+}
+
+/* FORMATANDO O BOTÃO ADMIN */
+#btn_ResgateAdmin{
+    padding: 10px;
+    border-radius: 9px;
+    border: 0px;
+    background-color: rgba(207, 197, 197, 0.7);
+    box-shadow: 0px 4px 4px #87A330;
+    font-weight: 700;
+    font-size: 1.5em;
+    margin-top: 10%;
+    color: rgba(41, 97, 23, 1);
+}
+
+#Resgate1{
+    width: 98%;
+}
+/* FORMATANDO O BOTÃO ADMIN */
+#btn_ResgateAdmin{
+    padding: 10px;
+    border-radius: 9px;
+    border: 0px;
+    background-color: rgba(207, 197, 197, 0.7);
+    box-shadow: 0px 4px 4px #87A330;
+    font-weight: 700;
+    font-size: 1.25em;
+    margin-top: 6%;
+    color: rgba(41, 97, 23, 1);
+}
+
+#Resgate1{
+    width: 98%;
+}
+
+/* ADICIONANDO UM HOVER NOS BOTÕES DE RESGATE */
+#btn_Resgate:hover{
+    background-color: whitesmoke;
+    border: 1px solid #296117;
+    color: #296117;
+    font-weight: 800;
+    box-shadow: none;
+}
+#btn_ResgateAdmin:hover{
+    box-shadow: none;
+    color: white;
+    background-color: #296117;
+}
+
+/* ARRUMANDO O FOOTER */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2rem;
+    margin-left: 20px;
+    width: 98%;
+    border-top: 1px solid rgba(87, 87, 87, 0.25);
+    padding-top: 20px;
+    color: rgba(87, 87, 87, 0.7);
+}
+footer div{
+    display: inline-block;
+}
+#icons{
+    right: 0;
+    position: fixed;
+    margin-right: 1.5%;
+}
+.foo{
+    margin-left: 10px;
+}
