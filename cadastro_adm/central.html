@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Página de Cadastro</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <nav id="RNavBar">
+        <div id="DivLeft">
+            <a href="/home/index.html"><img src="img/logo.png" alt="logo do site" id="ImgLogo"></a> <!--    Link para a página inicial  -->
+            <ul class="dropdown-menu text-small">
+        </div> 
+         <div id="DivRight">
+            <img src="img/Ellipse 4.png" alt="foto de perfil do usuário" id="ImgUser">
+            <a class="LogOff" href="/home/index.html"><ul>Sair</ul></a>
+        </div>
+    </nav>
+  </header>
+    <div class="container">
+        <div class="nav">
+            <ul>
+                <li><a href="./central.html"><i class="fa-solid fa-calendar-days"></i>  Central</a></li>
+                <li><a href="./cliente.html"><i class="fa-solid fa-user"></i>  Cliente</a></li>
+                <li><a href="./beneficios.html"><i class="fa-solid fa-cart-shopping"></i>  Benefícios</a></li>
+                <li><a href="./posto.html"><i class="fa-solid fa-location-dot"></i>  Posto de Coleta</a></li>
+                <li><a href="./admin.html"><i class="fa-solid fa-gear"></i>  Administrador</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h2>ADICIONADOS RECENTEMENTE</h2>
+            <div>
+                <h3>Clientes</h3>
+                <div>
+                    <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">CPF</th>
+                            <th scope="col">Pontos</th>
+                            <th></th>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Maria</td>
+                            <td>435.654.252-66</td>
+                            <td>1200</td>
+                            <th><i class="fa-solid fa-pencil"> </i></th>
+                            <th><i class="fa-solid fa-trash"></i></th>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Mariana</td>
+                            <td>456.625.525-55</td>
+                            <td>50</td>
+                            <th><i class="fa-solid fa-pencil"> </i></th>
+                            <th><i class="fa-solid fa-trash"></i></th>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Matheus</td>
+                            <td>481.033.652-00</td>
+                            <td>10</td>
+                            <th><i class="fa-solid fa-pencil"> </i></th>
+                            <th><i class="fa-solid fa-trash"></i></th>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+                  
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
