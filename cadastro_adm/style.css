@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: Josefin Sans;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -207,10 +207,9 @@ justify-content: center;
     
     .nav {
         width: 200px;
-        background-color: #D3E381;
+        background-color:rgba(211, 227, 129, 0.77);
         color: #fff;
         padding: 10px;
-        
     }
     
     .nav ul {
@@ -224,10 +223,11 @@ justify-content: center;
     
     .nav a {
         text-decoration: none;
-        color: #fff;
+        color: #000000;
         display: block;
         padding: 10px;
         transition: background-color 0.3s;
+        font-weight: bold;
     }
     
     .nav a:hover {
@@ -249,7 +249,8 @@ justify-content: center;
     
     .tab-link {
         text-decoration: none;
-        color: #fff;
+        color: #070707;
+        font-weight: bold;
         flex: 1;
         text-align: center;
         padding: 10px;
@@ -266,6 +267,7 @@ justify-content: center;
     
     h2 {
         color: #333;
+        font-weight: bold;
     }
     
 form {
@@ -299,5 +301,27 @@ form button{
 
 .btn:hover{
     background-color: #bac973;
+}
+
+#cadastro-form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.form-group label,
+.form-group input {
+    display: inline-block;
+}
+
+.form-group label {
+    width: 150px; /* Ajuste conforme necessário para alinhar os rótulos */
+    margin-right: 10px;
+}
+
+.form-group input {
+    width: 50%; /* Ajuste conforme necessário para o tamanho dos inputs */
+    padding: 5px;
 }
 
